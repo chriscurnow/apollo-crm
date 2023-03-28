@@ -1,0 +1,10 @@
+{
+  "/api/*": {
+    "target": "https://api.createsend.com/api/v3.3/",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+      },
+    "chanaeOrigin": true,
+    "logLevel": "debug"}
+}

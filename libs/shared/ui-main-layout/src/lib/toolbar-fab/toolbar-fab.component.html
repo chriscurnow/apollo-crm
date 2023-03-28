@@ -1,0 +1,12 @@
+
+<div class="fab-container">
+
+  <!-- <ng-container *ngIf="showAddButton"> -->
+    <div class="example-button-container" [@showHide]="hide ? 'hide' : 'show'">
+  <button mat-fab color="accent" aria-label="New Contract" matTooltip="Create new contract" [disabled]="hide" (click)="addButtonClicked()">
+    <mat-icon>add</mat-icon>
+    </button>
+    </div>
+  <!-- </ng-container> -->
+</div>
+

@@ -1,1 +1,187 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;
+  font-family: figtree, sans-serif;
+}
+
+.mat-toolbar {
+
+  font-family: figtree, sans-serif;
+
+}
+
+
+.flex-row-layout {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.flex-column-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+// children for flex-row-layout
+.flex-col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.flex-col-0 {
+  flex: 1;
+  margin-right: 20px;
+  flex-grow: 0;
+}
+
+.flex-col:last-child {
+  margin-right: 0;
+}
+
+// childrent for flex-column-layout
+.flex-row {
+  flex: 1
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.w200 {
+  max-width: 200px;
+}
+
+.full-width {
+  width: 100%;
+  margin:auto
+}
+
+.full-height {
+  height: 100%;
+}
+
+body {
+  font-family: figtree, sans-serif;
+}
+
+p {
+  font-family: figtree, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: figtree, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.mat-header-cell {
+  font-size: 12px;
+  font-weight: 800;
+  background-color: white;
+  color: rgba(43,173,227,1);
+}
+
+.mat-cell {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+
+tr.mat-row.cdk-row {
+  height: 32px;
+}
+
+tr.mat-header-row.cdk-header-row {
+  height:40px;
+}
+
+// .mat-row:nth-child(even){
+//     background-color: #eee;
+// }
+
+table.mat-table.cdk-table.full-width-table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+/*
+**Active tab label colour changes:**
+**/
+
+
+.mat-tab-label-active
+{
+   color: #00ADEE !important;
+}
+
+/**To remove the border for the tabs:**/
+
+.remove-border-bottom .mat-tab-header
+{
+    border-bottom: none;
+}
+
+/**To chnage the colour of the ink bar(tab border):**/
+
+.mat-tab-nav-bar:active
+{
+    color: #00ADEE !important;
+}
+/** To specify the height && color for the ink bar:**/
+
+// .mat-ink-bar{
+//     background-color: white !important;
+//     display:block;
+//     height: 1px !important;
+// }
+
+.actions-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .button {
+    margin-right: 10px;
+  }
+
+  .buton:last-child {
+    margin-right: 0;
+  }
+}
+
+.mat-mdc-tab .mdc-tab__text-label {
+  color: white;
+}
+
+// text style for links in mat-tab-nav-bar
+.mat-mdc-tab-link .mdc-tab__text-label {
+  color: white;
+  font-size: 12px
+}
+
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: lightgray;
+}
+
+.mdc-tab__text-label {
+  color: white;
+}
+
+.mdc-tab {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+

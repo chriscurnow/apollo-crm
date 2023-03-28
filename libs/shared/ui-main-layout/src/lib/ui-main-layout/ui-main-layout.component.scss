@@ -1,0 +1,101 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar {
+  .logo {
+    background-color: var(--contrast);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 40px;
+    }
+  }
+
+  .push-content {
+    flex: 1 0 0;
+  }
+
+  ::ng-deep {
+    a {
+      color: rgba($color:#fff, $alpha:0.5);
+      margin: 0 10px 0 0;
+      &.active {
+        color: white;
+        //  var(--primary);
+      }
+    }
+  }
+}
+
+main {
+  flex: 1 0 0;
+}
+
+footer {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-contrast);
+  background-color: var(--accent-darker);
+}
+
+.first-row {
+  height: 32px;
+}
+.second-row {
+  height: 24px;
+  margin-left:120px;
+  font-size: 14px;
+ font-weight: 400;
+}
+
+.logo-col {
+  flex-basis: 50px;
+}
+
+.main-col {
+  flex-basis: 100%;
+}
+
+.flex-row {
+  justify-content: flex-start;
+  width: 100%
+}
+
+.main.nav.mat-tab-link{
+  height: 28px
+}
+
+.fab-container {
+  display: flex;
+  flex-direction: row-reverse;
+  // justify-content: end;
+  margin-top: -32px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 100;
+  height: 64px;
+}
+
+.fab-item {
+  flex-basis: 0;
+}
+
+.fab-container .mat-icon {
+  font-size: 24px;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}

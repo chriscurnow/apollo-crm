@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="mat-toolbar-multiple-rows main-nav">
+<div class="flex-row-layout flex-align-items-center full-width full-height" >
+  <!-- <div class="flex-col logo-col">
+     <a href="/" class="logo"><img src="assets/logo.png" alt="4CastPro" /></a>
+  </div> -->
+
+
+      <div class="flex-col main-col">
+        <span>{{ appName }}</span>
+     </div>
+      <div class="flex-col">
+      <ng-content></ng-content>
+      </div>
+      <!-- <div class="flex-col">
+        <apollo-crm-shared-feature-toolbar-user></apollo-crm-shared-feature-toolbar-user>
+      </div> -->
+
+  <!-- <span class="push-content"></span> -->
+  <div class="flex-row-layout">
+
+  </div>
+
+    <!-- <ng-content select="[nav]"></ng-content> -->
+
+</div>
+
+</mat-toolbar>
+<!-- <apollo-crm-toolbar-fab></apollo-crm-toolbar-fab> -->
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>Ⓒ {{ year }} ApolloCRM</footer>
+

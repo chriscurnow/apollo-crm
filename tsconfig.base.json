@@ -14,7 +14,27 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@apollo-crm/crm/data-access-campaigns": [
+        "libs/crm/data-access-campaigns/src/index.ts"
+      ],
+      "@apollo-crm/crm/feature-campaigns": [
+        "libs/crm/feature-campaigns/src/index.ts"
+      ],
+      "@apollo-crm/crm/feature-lists": ["libs/crm/feature-lists/src/index.ts"],
+      "@apollo-crm/crm/feature-subscribers": [
+        "libs/crm/feature-subscribers/src/index.ts"
+      ],
+      "@apollo-crm/shared/data-access-navigation": [
+        "libs/shared/data-access-navigation/src/index.ts"
+      ],
+      "@apollo-crm/shared/feature-toolbar-user": [
+        "libs/shared/feature-toolbar-user/src/index.ts"
+      ],
+      "@apollo-crm/shared/ui-main-layout": [
+        "libs/shared/ui-main-layout/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
